@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Группы | Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/music.css">
+</head>
+<body class="bg-white">
+
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links-left">
+                        <li class="nav-item">
+                            <a class="nav-link" href="music.html">MUSIC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tour.html">TOUR</a>
+                        </li>
+                    </ul>
+
+                    <a class="navbar-brand mx-auto brand-container" href="main.html">
+                        <div class="header-logo-container">
+                            <img src="../imgs/das2.png" alt="Radiohead Logo" class="img-fluid logo-placeholder">
+                        </div>
+                    </a>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="bio.html">BIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        
+        <h1 class="text-center mb-5 display-4 band-title">
+            ALBUM ARCHIVE
+        </h1>
+        
+        <div class="row justify-content-center g-5">
+            
+            <div class="col-12 col-md-6 col-lg-4 album-col">
+                <div class="album-card shadow-lg album-1" data-album-id="album1">
+                    <div class="album-info">
+                        <h2 class="album-title">OK Computer</h2>
+                        <p class="album-year">1997</p>
+                        <button class="btn btn-outline-light tracklist-toggle">VIEW TRACKLIST</button>
+                    </div>
+                </div>
+                <div class="tracklist" id="tracklist-album1">
+                    <ol>
+                        <li>Reboot (Intro)</li>
+                        <li>Digital Dust</li>
+                        <li>Echo Chamber</li>
+                        <li>Signal Lost</li>
+                        <li>Error 404 (Hidden Track)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 album-col">
+                <div class="album-card shadow-lg album-2" data-album-id="album2">
+                     <div class="album-info">
+                        <h2 class="album-title">The Bends</h2>
+                        <p class="album-year">1995</p>
+                        <button class="btn btn-outline-light tracklist-toggle">VIEW TRACKLIST</button>
+                    </div>
+                </div>
+                <div class="tracklist" id="tracklist-album2">
+                    <ol>
+                        <li>White Noise</li>
+                        <li>The Broadcast</li>
+                        <li>Frequency Drift</li>
+                        <li>Ghost Signal</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 album-col">
+                <div class="album-card shadow-lg album-3" data-album-id="album3">
+                     <div class="album-info">
+                        <h2 class="album-title">Rainbows</h2>
+                        <p class="album-year">2007</p>
+                        <button class="btn btn-outline-light tracklist-toggle">VIEW TRACKLIST</button>
+                    </div>
+                </div>
+                <div class="tracklist" id="tracklist-album3">
+                    <ol>
+                        <li>Zero Gravity</li>
+                        <li>Black Hole Sunrise</li>
+                        <li>No Destination</li>
+                        <li>Starlight Fracture</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 album-col">
+                <div class="album-card shadow-lg album-4" data-album-id="album4">
+                     <div class="album-info">
+                        <h2 class="album-title">Kid A</h2>
+                        <p class="album-year">2000</p>
+                        <button class="btn btn-outline-light tracklist-toggle">VIEW TRACKLIST</button>
+                    </div>
+                </div>
+                <div class="tracklist" id="tracklist-album4">
+                    <ol>
+                        <li>City Scape</li>
+                        <li>Rooftop Chase</li>
+                        <li>Neon Rain</li>
+                        <li>Subway Silence</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 album-col">
+                <div class="album-card shadow-lg album-5" data-album-id="album5">
+                     <div class="album-info">
+                        <h2 class="album-title">Pablo Honey</h2>
+                        <p class="album-year">1993</p>
+                        <button class="btn btn-outline-light tracklist-toggle">VIEW TRACKLIST</button>
+                    </div>
+                </div>
+                <div class="tracklist" id="tracklist-album5">
+                    <ol>
+                        <li>Opening Sequence</li>
+                        <li>Factory Reset</li>
+                        <li>First Contact</li>
+                        <li>System Check</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer class="text-center py-3 mt-5 main-footer">
+        <p class="mb-0">&copy; 2025 Название Группы. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/music.js"></script>
+
+</body>
+</html>

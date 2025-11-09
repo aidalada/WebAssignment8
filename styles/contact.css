@@ -1,0 +1,245 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    flex: 1;
+}
+
+.main-header {
+    background-color: #000;
+    padding: 1rem 0;
+    border-bottom: 3px solid #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.5rem !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #e74c3c !important;
+}
+
+.nav-link.active {
+    color: #e74c3c !important;
+}
+
+.header-logo-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    max-height: 100%;
+}
+
+.fan-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #000;
+}
+
+.section-box {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-left: 5px solid #000;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.album-vote {
+    background-color: #fff;
+    border: 3px solid #000;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 8px;
+}
+
+.album-vote:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.album-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.vote-count {
+    font-size: 0.9rem;
+    color: #e74c3c;
+}
+
+.album-vote:hover .vote-count {
+    color: #fff;
+}
+
+.message-form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-control {
+    border: 2px solid #ddd;
+    padding: 0.8rem;
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.btn-submit {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.7rem 2rem;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+.fan-message {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #e74c3c;
+    border-radius: 5px;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.message-header strong {
+    color: #000;
+}
+
+.message-date {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.message-text {
+    color: #333;
+}
+
+.quiz-box {
+    background-color: #000;
+    color: #fff;
+    border-left: 5px solid #e74c3c;
+}
+
+.quiz-box .section-title {
+    color: #fff;
+}
+
+.quiz-box .section-subtitle {
+    color: #ccc;
+}
+
+.quiz-question {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.quiz-option {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quiz-option:hover {
+    background-color: #e74c3c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.quiz-option.correct {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.quiz-option.wrong {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.quiz-result {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .fan-title {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+}

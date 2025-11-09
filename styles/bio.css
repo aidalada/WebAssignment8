@@ -1,0 +1,211 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    flex: 1;
+}
+
+.main-header {
+    background-color: #000;
+    padding: 1rem 0;
+    border-bottom: 3px solid #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.5rem !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #e74c3c !important;
+}
+
+.nav-link.active {
+    color: #e74c3c !important;
+}
+
+.header-logo-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-placeholder {
+    max-height: 100%;
+}
+
+.bio-title {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #000;
+}
+
+.intro-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-left: 5px solid #000;
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.albums-years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.year-badge {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.members-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #000;
+}
+
+.member-row {
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.member-row.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-image-box {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    border: 3px solid #000;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.member-image-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.member-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-bio {
+    padding: 1rem;
+}
+
+.member-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    font-size: 1rem;
+    color: #e74c3c;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.member-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.member-row:hover .member-name {
+    color: #e74c3c;
+    transition: color 0.3s;
+}
+
+.quote-box {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.quote-text {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.quote-author {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #e74c3c;
+}
+
+.main-footer {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .bio-title {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+    
+    .members-title {
+        font-size: 1.8rem;
+    }
+    
+    .member-image-box {
+        height: 300px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .member-bio {
+        text-align: center !important;
+    }
+    
+    .albums-years {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quote-text {
+        font-size: 1.3rem;
+    }
+}
